@@ -1,0 +1,21 @@
+{
+    "name": "actjm/sample-php",
+    "authors": [
+        {
+            "name": "Junjie Morales",
+            "email": "act.jmorales@gmail.com"
+        }
+    ],
+    "require": {
+        "illuminate/collections": "^12.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "Core\\": "Core/",
+            "Http\\": "Http/"
+        }
+    },
+    "require-dev": {
+        "pestphp/pest": "*"
+    }
+}
