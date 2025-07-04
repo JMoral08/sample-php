@@ -1,0 +1,334 @@
+.app-body {
+    margin: auto;
+    font-weight: 400;
+    background-color: #e3e7ed;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.app-header {
+    width: 100%;
+    display: flex;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 100;
+    flex-wrap: wrap;
+    background-color: #fff;
+    border-bottom: 1px solid #d8dbe0;
+}
+.app-brand {
+    position: fixed;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+    white-space: nowrap;
+    padding: 8px;
+    width: 260px;
+    z-index: 100;
+    border-bottom: 1px solid #d8dbe0;
+    transition: 0.3s ease;
+}
+/*.app-brand img {
+    height: 4rem; 
+    max-width: 100%;
+    width: 200px;
+}*/
+/*.app-brand img {
+    width: 100%;
+    height: 100%;
+}*/
+/*Login*/
+.brand-first {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 800;
+    padding: 0 30px;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    background-color: #640D14;
+    border-radius: 15px 50px 30px;
+}
+.brand-second {
+    text-decoration: none;
+    font-size: 0.875em;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 700;
+    padding: 8px;
+    color: #171717;
+    margin-left: -25px;
+    margin-top: 11px;
+    background-color: #fff;
+    border-radius: 15px 50px 30px;
+    border: 1px solid #d8dbe0;
+    text-transform: uppercase;
+}
+/*Login*/
+.app-brand .brand-first {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.9rem;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 800;
+    padding: 0 30px;
+    color: #fff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    background-color: #640D14;
+    border-radius: 15px 50px 30px;
+}
+.app-brand .brand-second {
+    text-decoration: none;
+    font-size: 0.875em;
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 700;
+    padding: 8px;
+    color: #171717;
+    margin-left: -25px;
+    margin-top: 11px;
+    background-color: #fff;
+    border-radius: 15px 50px 30px;
+    border: 1px solid #d8dbe0;
+    text-transform: uppercase;
+}
+.btn-toggle-show {
+    position: fixed;
+    display: flex;
+    margin-left: 16rem;
+    color: #6F7783;
+    padding: 25px;
+    z-index: 1030;
+    background-color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #d8dbe0;
+}
+
+.navbar-nav {
+    display: flex;
+    position: fixed;
+    margin-left: 19.5rem;
+    background-color: #fff;
+    border-bottom: 1px solid #d8dbe0;
+    width: 100%;
+    padding: 33px 0;
+    left: 0;
+    z-index: 1030;
+    font-weight: 100;
+}
+.side-nav {
+    display: flex;
+    position: fixed;
+    padding: 10px 10px;
+    font-size: 1rem;
+    text-transform: capitalize;
+    top: 0;
+    right: 0;
+}
+.side-nav .icon {
+    font-size: 20px;
+}
+.navbar-user {
+    position: fixed;
+    display: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 17px; 
+    z-index: 1030;
+    background-color: #fff;
+}
+.navbar-user i {
+    text-decoration: none;
+    color: #6F7783;
+    font-size: 20px;
+}
+.side-nav .nav-link .nav-item {
+    padding: 0 15px;
+    text-decoration: none;
+    color: #6F7783;
+    white-space: nowrap;
+}
+.side-nav .nav-link .nav-item:hover {
+    color: #000000;
+    font-weight: 300;
+    transition: .3s ease-in-out;
+}
+.nav .nav-link .nav-item:hover {
+    color: #000000;
+    font-weight: 300;
+    transition: .3s ease-in-out;
+}
+@media screen and (max-width: 1024px) {
+    .app-body .navbar-nav {
+        display: none;
+    }
+    .app-body .app-brand {
+        width: 100%;
+        justify-content: center;
+        transition: .2s ease-in-out;
+    }
+    .app-body .btn-toggle-show {
+        margin-left: 0;
+        width: 10%;
+        background-color: transparent;
+    }
+    .app-body .navbar-user {
+        display: block;
+        right: 0;
+    }
+
+}
+.app-sidebar {
+    display: flex;
+    position: relative;
+}
+.sidebar {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    position: fixed;
+    float: left;
+    left: 0;
+    width: 16rem;
+    height: 100%;
+    background-color: #1d2630;
+    margin: 64px 0 0 0;
+    padding: 0 0 90px;
+    list-style: none;
+    z-index: 10;
+}
+.side-title {
+    color: rgba(255,255,255,0.8);
+    line-height: 40px;
+    padding: 0 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-bottom: 0.10rem;
+}
+.side-link i {
+    padding: 0 10px;
+    font-size: 20px;
+}
+.side-link .side-item {
+    display: block;
+    padding: 10px 10px;
+    color: rgba(255,255,255,0.5);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+.side-footer {
+    bottom: 0;
+    position: fixed;
+    padding: 10px 10px 0 10px;
+    color: rgba(255,255,255,0.3);
+    background-color: #151B26;
+    /* background-color: #3c4b64; */
+    width: 16rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.side-link .side-item:hover i, .side-link .side-item:focus i {
+    color: rgb(51, 153, 255);
+}
+.side-link .side-item.active i, .side-link .side-item:active i {
+    color: rgb(51, 153, 255);
+}
+.side-link .side-item:hover, .side-link .side-item:focus {
+    background-color: rgba(255,255,255,0.1);
+    color: #ebedef;
+}
+.side-link .side-item.active, .side-link .side-item:active {
+    background-color: rgba(255,255,255,0.1);
+    color: #ebedef;
+}
+.show .sidebar {
+  left: -260px; 
+}
+.show .app-main {
+  width: 100%;
+}
+.show-active .sidebar {
+  left: 0;
+}
+.show-active .app-main {
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.5;
+
+}
+@media screen and (max-width: 1024px) {
+    .sidebar {
+        left: -260px;
+    }
+    .app-body .app-main {
+        width: 100%;
+    }
+}
+ul.breadcrumb {
+    padding: 10px 20px;
+    list-style: none;
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+    width: 100%;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: none;
+}
+.app-main {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #e3e7ed;
+  width: calc(100% - 16rem);
+  padding: 65px 0;
+  float: right;
+  display: flex;
+}
+.vr {
+  display: flex;
+  flex: 0 0 1px;
+  width: 1px;
+  padding: 0 !important;
+  margin: 0;
+  background-color: #000;
+  border: 0;
+  opacity: 0.25;
+  display: inline-block;
+  align-self: stretch;
+  width: 1px;
+  min-height: 1em;
+  background-color: #000;
+  opacity: 0.25;
+}

@@ -17,11 +17,11 @@
                     <a href="/notes">go back</a>
                     <p><?= htmlspecialchars($note['body'])?></p>
                     <a href="/note/edit?id=<?= $note['id'] ?>" class="btn btn-secondary">Edit</a>
-                    <!-- <form class="mt-3" method="POST">
+                    <form class="mt-3" method="POST">
                         <input type="hidden" name="_method" value="DELETE">
                         <input type="hidden" name="id" value="<?= $note['id'] ?>">
                         <button class="btn btn-danger">Delete</button>
-                    </form> -->
+                    </form>
                 </div>
             </div>
         </div>
