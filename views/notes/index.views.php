@@ -8,10 +8,10 @@
     <?php foreach($notes as $note) : ?>
         <a href="/note?id=<?= $note['id'] ?>" class="text-decoration-none">
             <div class="grid mb-2">
-                <div class="d-flex flex-column px-2 py-2 align-items-start bg-white rounded">
+                <div class="d-flex flex-column px-3 py-3 align-items-start bg-white bg-hover rounded">
                     <p class="fs-4 fw-bold text-dark"><?= htmlspecialchars($note['title'])?></p>
-                    <p class="text-dark px-3"><?= htmlspecialchars($note['body'])?></p>
-                    <span>Hello</span>
+                    <p class="text-dark px-2"><?= htmlspecialchars($note['body'])?></p>
+                    <small class="text-muted">Hello</small>
                 </div>
             </div>
         </a>

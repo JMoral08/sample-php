@@ -1,6 +1,6 @@
 <?php require base_path('views/inc/header.php'); ?>
 <?php require base_path('views/inc/navbar.php'); ?>
-<?php require base_path('views/inc/banner.php'); ?>
+<?php require base_path('views/inc/breadcrumb.php'); ?>
 
 <main class="container p-3">
     <div class="row">
