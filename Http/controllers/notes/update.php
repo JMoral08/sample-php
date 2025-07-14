@@ -27,8 +27,9 @@ if(count($errors)) {
     ]);
 }
 
-$db->query('update notes set body = :body where id = :id ', [
+$db->query('update notes set title = :title, body = :body where id = :id ', [
     'id' => $_POST['id'],
+    'title' => $_POST['title'],
     'body' => $_POST['body']
 ]);
 

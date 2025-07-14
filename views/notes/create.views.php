@@ -16,6 +16,14 @@
                 <div class="card-body">
                     <form method="POST" action="/notes">
                         <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" name="title" id="title" value="<?= $_POST['title'] ?? '' ?>">
+                            <?php if(isset($errors['title'])) : ?>
+                                <p class="text-danger"><?= $errors['title'] ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="mb-3">
                             <label for="body" class="form-label">Description</label>
                             <textarea class="form-control" name="body" id="body" rows="3"><?= $_POST['body'] ?? '' ?></textarea>
                             <?php if(isset($errors['body'])) : ?>

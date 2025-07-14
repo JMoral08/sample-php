@@ -1,4 +1,4 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3 p-2">
         <div class="container">
             <a class="navbar-brand" href="#">Sample PHP</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
@@ -10,7 +10,10 @@
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
                 <div class="offcanvas-body">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                        
+                    </ul>
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <a class="<?= urlIs('/') ? 'active' : 'nav-link' ?> nav-link" href="/">Home</a>
                         </li>
@@ -25,20 +28,23 @@
                         <li class="nav-item">
                             <a class="<?= urlIs('/contact') ? 'active' : 'nav-link' ?> nav-link" href="/contact">Contact Us</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                         <li class="nav-item">
                             <?php if($_SESSION['user'] ?? false) : ?>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <?= $_SESSION['user']['email'] ?? 'Guest' ?>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <?= $_SESSION['user']['email'] ?? 'Guest' ?>
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <form action="/session" method="POST">
-                                        <input type="hidden" name="_method" value="DELETE">
-                                        <button class="nav-link btn btn-outline-secondary">Log Out</button>
-                                    </form>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li>
+                                            <form action="/session" method="POST">
+                                                <input type="hidden" name="_method" value="DELETE">
+                                                <button class="dropdown-item">Log Out</button>
+                                            </form>
+                                        </li>
+                                    </ul>
                                 </li>
                             <?php else :?>
                                 <li class="nav-item">
